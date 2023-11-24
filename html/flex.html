@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #heading{
+           color: chocolate;
+         text-align:center;
+        }
+        .container_1{
+            height: 100px;
+            /* width: 800px; */
+            margin: 5px;
+            padding: 10px;
+            background-color: cadetblue;
+            border: 3px solid black;
+            /* flex property */
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .box{
+            height: 70px;
+            width: 70px;
+            margin: 5px;
+            border: 3px solid black;
+        
+        }
+        #box1{
+            background-color: rgb(9, 255, 0);
+        }
+        #box2{
+            background-color: brown;
+        }
+        #box3{
+            background-color: rgb(248, 236, 23);
+        }
+        #box4{
+            background-color: rgb(165, 42, 163);
+        }
+        .container_2{
+            height: 100px;
+            /* width: 800px; */
+            margin: 5px;
+            padding: 10px;
+            background-color: cadetblue;
+            border: 3px solid black;
+            /* flex property */
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .container_3{
+            height: 500px;
+            /* width: 800px; */
+            margin: 5px;
+            padding: 10px;
+            background-color: cadetblue;
+            border: 3px solid black;
+            /* flex property */
+            display: flex;
+            flex-direction: column;
+        }
+        .container_4{
+            height: 500px;
+            /* width: 800px; */
+            margin: 5px;
+            padding: 10px;
+            background-color: cadetblue;
+            border: 3px solid black;
+            /* flex property */
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">flex property</h1>
+    <div class="container_1">
+        <div id="box1" class="box">item 1</div>
+        <div id="box2" class="box">item 2</div>
+        <div id="box3" class="box">item 3</div>
+        <div id="box4" class="box">item 4</div>
+     </div>
+     <div class="container_2">
+        <div id="box1" class="box">item 1</div>
+        <div id="box2" class="box">item 2</div>
+        <div id="box3" class="box">item 3</div>
+        <div id="box4" class="box">item 4</div>
+     </div>
+     <div class="container_3">
+        <div id="box1" class="box">item 1</div>
+        <div id="box2" class="box">item 2</div>
+        <div id="box3" class="box">item 3</div>
+        <div id="box4" class="box">item 4</div>
+     </div>
+     <div class="container_4">
+        <div id="box1" class="box">item 1</div>
+        <div id="box2" class="box">item 2</div>
+        <div id="box3" class="box">item 3</div>
+        <div id="box4" class="box">item 4</div>
+     </div>
+</body>
+</html>
