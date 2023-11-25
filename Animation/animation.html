@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #animation_box{
+            border: 2px solid black;
+
+        }
+        .box{
+            height: 90px;
+            width: 90px;
+            background-color: antiquewhite;
+            margin: 10px;
+            border: 2px solid hotpink;
+            border-radius: 5px;
+
+
+        }
+        #box1{
+            position:relative;
+            animation-name: gumakkad;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 4;
+            animation-direction:normal;
+
+        }
+
+        #box2{
+            position:relative;
+            animation-name: gumakkad;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 4;
+            animation-direction: reverse;
+        }
+        #box3{
+            position:relative;
+            animation-name: gumakkad;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 4;   /*infinite ho sakta he */
+            animation-direction: alternate;  
+        }
+        #box4{
+            position:relative;
+            animation-name: gumakkad;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 4;
+            animation-direction:alternate-reverse;  
+        }
+
+        /* animation ke liye used  */
+        @keyframes gumakkad{
+            from{
+                left: 10px;
+            }
+            to{
+                left: 500px;
+            }
+        }
+        /*   aagr jiyada animation karna he kisi bhi % areya tak tab */
+
+        /* @keyframes gumakkad{
+            0%{left: 10px;}
+            50%{left: 150px}
+            70%{left: 300px;}
+            100%{left: 500px;}
+        } */
+        
+    </style>
+</head>
+<body>
+      <!-- animations property 
+          animation-name , animation-duration , animation-timing-function , animation-delay
+          animation -iteration-count , animation-direction --> 
+          <div id="animation_box">
+            <div id="box1" class="box">Animation 1</div><hr>
+            <div id="box2" class="box">Animation 2</div><hr>
+            <div id="box3" class="box">Animation 3</div><hr>
+            <div id="box4" class="box">Animation 4</div>
+          </div>
+</body>
+</html>
