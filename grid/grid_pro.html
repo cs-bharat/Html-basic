@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid properties</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 10px;
+            border: 2px solid black;
+            display: grid;
+            row-gap: 20px;
+            column-gap: 5px;
+            /* 1fr - auto size he box ki  */
+            grid-template-columns: repeat(4,1fr);
+
+            /* px , % , vh , autofill(jaha jagah milegi vaha set)  */
+            grid-template-columns: 30% 30% 40%;    /* colum ke liye properties*/
+
+            /* rows ke liye -> px,%, vh */
+            grid-template-rows:200px 120px ;
+            grid-auto-rows: 90px;
+
+            /* tabi work karenge jab sixe px me define ho */
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid green;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- emmet code to create box (.container>.box#box-${box-$}*10) -->
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+        <div class="box" id="box-9">box-9</div>
+        <div class="box" id="box-10">box-10</div>
+        <div class="box" id="box-10">box-11</div>
+        <div class="box" id="box-10">box-12</div>
+        <div class="box" id="box-10">box-13</div>
+        <div class="box" id="box-10">box-14</div>
+        <div class="box" id="box-10">box-15</div>
+    </div>
+</body>
+</html>
